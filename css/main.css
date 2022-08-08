@@ -46,3 +46,9 @@ h1, h2, h3, h4, h5, h6{
 .vw_height{
     height: 35vh;
 }
+.bg_fond{
+    background-image: url(../img/news.jpg);
+}
+.w-css-35{
+    width: 45%;
+}
