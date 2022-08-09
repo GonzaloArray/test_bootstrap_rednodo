@@ -28,10 +28,10 @@ h1, h2, h3, h4, h5, h6{
     display: none;
 }
 .text_color_primary{
-    color: #0c407d;
+    color: #2e68ad;
 }
 .bg_color_primary{
-    background-color: #0c407d;
+    background-color: #2e68ad;
 }
 .fotos_cuatro{
     overflow-x: hidden;
@@ -51,4 +51,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .w-css-35{
     width: 45%;
+}
+.border_primary{
+    border: 2px solid #2e68ad;
 }
