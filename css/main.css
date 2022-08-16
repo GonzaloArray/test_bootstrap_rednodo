@@ -8,7 +8,10 @@
 
     --font: ;
 }
-
+*{
+    margin: 0;
+    padding: 0;
+}
 /* Globales */
 h1, h2, h3, h4, h5, h6{
     font-family: var(--font);
@@ -29,6 +32,9 @@ h1, h2, h3, h4, h5, h6{
 }
 .text_color_primary{
     color: #2e68ad;
+}
+.bg_color_secondary{
+    background-color: #0a376c;
 }
 .bg_color_primary{
     background-color: #2e68ad;
@@ -54,4 +60,29 @@ h1, h2, h3, h4, h5, h6{
 }
 .border_primary{
     border: 2px solid #2e68ad;
+}
+.card-logo{
+    width: 12rem;
+}
+.title_footer{
+    font-size: 13px;
+    /* Aca va opensans */
+}
+.parraf_footer{
+    font-size: 14px;
+}
+.rounded-border2{
+    border-bottom-left-radius: .6rem;
+}
+.rounded-border{
+    border-bottom-right-radius: .6rem;
+}
+.min-margin{
+    margin-top: -.3rem;
+}
+.min-margin-left{
+    margin-left: -.3rem;
+}
+.card-facebook{
+    width: 2.3rem;
 }
