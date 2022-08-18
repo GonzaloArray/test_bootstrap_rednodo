@@ -86,3 +86,7 @@ h1, h2, h3, h4, h5, h6{
 .card-facebook{
     width: 2.3rem;
 }
+.font-list li:nth-child(2), .font-list li:nth-child(3){
+    font-size: 10px;
+    list-style-type: disc;
+}
