@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta name="description" content="serArgentino">
+    <meta name="description" content="Ser Argentino">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=+, initial-scale=1.0" />
@@ -22,7 +22,8 @@
 </head>
 
 <body>
-    <div class="p-1 d-flex justify-content-end align-items-center d-none d-lg-flex">
+    <div class="p-1 d-flex justify-content-end align-items-center d-none d-lg-flex container-fluid container-xxl
+    ">
         <div class="navbar navbar-expand-lg">
             <a href="#" class="nav-link px-2 text_color_primary"><i class="fa-solid fa-circle-user"></i>
                 SerArgentino</a>
@@ -55,21 +56,22 @@
         </div>
     </div>
     <nav class="navbar navbar-expand-lg navContainer py-3">
-        <div class="container-fluid px-4">
-            <a class="navbar-brand" href="#"><img src="./img/logo_ser_argentino.png" alt="logo de serArgentino"
-                    width="300px" height="auto"></a>
+        <div class="container-fluid container-xxl px-4">
+            <a class="navbar-brand" href="#"><img src="./img/logo_ser_argentino.png" alt="Ser Argentino"
+                    width="200px" height="auto"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav m-auto mb-2 mb-lg-0 ps-5">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0 ps-lg-5">
+                    <li class="nav-item dropdown m-lg-auto">
+                        <a href="#"><i class="fa-solid fa-house pe-4 text_color_primary"></i></a>
+                    </li>
                     <li class="nav-item dropdown">
-
                         <a class="nav-link dropdown-toggle text_color_primary" href="#" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fa-solid fa-house pe-4 "></i>
                             Turismo
                         </a>
                         <ul class="dropdown-menu">
@@ -151,14 +153,27 @@
                             </li>
                         </ul>
                     </li>
+
+                    <li class="nav-item dropdown d-lg-none">
+                        <a class="nav-link dropdown-toggle text_color_primary" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Loguearse
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">SerArgentino</a></li>
+                            <li><a class="dropdown-item" href="#">Salir</a></li>
+                        </ul>
+                    </li>
                 </ul>
-                <form class="d-flex border-bottom border-top-0 border-end-0 border-start-0" role="search">
-                    <input class="border-0" type="search" placeholder="Buscar..." aria-label="Search" />
-                    <button class="btn p-0 border-0" type="submit">
-                        <p class="p-0 m-0 text_color_primary"><i class="fa-solid fa-magnifying-glass"></i></p>
-                    </button>
+                <form class="d-none d-lg-flex justify-content-evenly align-items-center m-auto  border-top-0 border-end-0 border-start-0" role="search">
+                    <div class="border-bottom">
+                        <input class="border-0" type="search" placeholder="Buscar..." aria-label="Search" />
+                        <button class="btn p-0 border-0" type="submit">
+                            <p class="p-0 m-0 text_color_primary"><i class="fa-solid fa-magnifying-glass"></i></p>
+                        </button>
+                    </div>
                     <!-- Carrito -->
-                    <ul class="navbar-nav m-auto mb-2 mb-lg-0 ps-3">
+                    <ul class="navbar-nav m-auto mt-1 ps-3">
                         <li class="nav-item  dropdown">
                             <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fa fa-shopping-cart position-relative" aria-hidden="true">
@@ -176,19 +191,28 @@
                         </li>
                     </ul>
                 </form>
+                <div class="m-0 p-0 d-flex justify-content-center d-lg-none pt-4">
+                    <p class="m-0 px-2"><strong>27°C</strong> <i class="fa-solid fa-cloud-sun text_color_primary"></i> </p>
+                    <p class="m-0 px-2">Buenos Aires - Nublado - Miercoles 08 de enero</p>
+                </div>
             </div>
         </div>
     </nav>
+    <form action="" class="d-lg-none">
+        <div class="input-group mb-2 border-bottom">
+            <input type="text" class="form-control border-0 ps-4" placeholder="Buscar..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <button class="border-0"><span class="input-group-text bg-light border-0 px-4" id="basic-addon2"><i class="fa-solid fa-magnifying-glass"></i></span></button>
+        </div>
+    </form>
     <div class="position-fixed m-auto start-0" style="z-index: 9999;">
         <div class="d-flex justify-content-center flex-column text-center">
-            <a href="" class="py-2 px-3 text-light fs-5" style="background-color: #3b5998;"><i class="fa fa-facebook"
-                    aria-hidden="true"></i></a>
-            <a href="" class="py-2 px-3 bg-info text-light fs-5"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a href="" class="py-2 px-3 bg-primary text-light fs-5"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="" class="py-2 px-3 bg-secondary text-light fs-5"><i class="fa-solid fa-envelope"></i></a>
-            <a href="" class="py-2 px-3 bg-warning text-light fs-5"><i class="fa-solid fa-star"></i></a>
-            <a href="" class="py-2 px-3 bg-danger text-light fs-5"><i class="fa-solid fa-plus"></i></i></a>
-            <a href="" class="py-2 px-3 bg-success text-light fs-5"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="" class="py-2 px-2 text-light fs-5" style="background-color: #3b5998;"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="" class="py-2 px-2 bg-info text-light fs-5"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="" class="py-2 px-2 bg-primary text-light fs-5"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="" class="py-2 px-2 bg-secondary text-light fs-5"><i class="fa-solid fa-envelope"></i></a>
+            <a href="" class="py-2 px-2 bg-warning text-light fs-5"><i class="fa-solid fa-star"></i></a>
+            <a href="" class="py-2 px-2 bg-danger text-light fs-5"><i class="fa-solid fa-plus"></i></i></a>
+            <a href="" class="py-2 px-2 bg-success text-light fs-5"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
     </div>
     <!-- TODO: Carousel -->
@@ -219,7 +243,7 @@
                 </div>
                 <div class="col-3 p-1">
                     <!-- Card -->
-                    <div class="card  border border-primary border-2">
+                    <div class="card border border-primary border-2">
                         <img src="./img/asado.jpg" class="w-100" alt="..." />
                     </div> <!-- CARD -->
                 </div>
@@ -242,9 +266,9 @@
     <section class="my-4">
         <div class="container-fluid container-xxl">
             <div class="row mt-3">
-                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                     <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 position-relative">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 position-relative pb-4 pb-md-0">
                             <img src="./img/img_prueba.jpg" class="card-img-top w-100" alt="...">
                             <div class="card-body pt-3">
                                 <h5 class="card-title">Card title</h5>
@@ -262,10 +286,7 @@
                             <img src="./img/img_prueba.jpg" class="card-img-top w-100" alt="...">
                             <div class="card-body pt-3">
                                 <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of
-                                    the
-                                    card's content.</p>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                             <div
                                 class="fw-lighter text-light position-absolute top-0 start-0 bg_color_secondary ps-2 pe-4 py-1 mt-2 ms-2 rounded-border">
@@ -280,8 +301,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row mt-3">
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="row mt-3 px-3 px-sm-0">
+                        <div class="col-lg-4 col-md-4 col-4">
                             <div class="row">
                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                                     <img src="./img/columnistas.jpg" class="img-fluid  rounded-circle" alt="...">
@@ -295,7 +316,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        <div class="col-lg-4 col-md-4 col-4">
                             <div class="row">
                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                                     <img src="./img/columnistas.jpg" class="img-fluid  rounded-circle" alt="...">
@@ -309,7 +330,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        <div class="col-lg-4 col-md-4 col-4">
                             <div class="row">
                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                                     <img src="./img/columnistas.jpg" class="img-fluid  rounded-circle" alt="...">
@@ -325,7 +346,7 @@
                         </div>
                     </div>
                     <div class="row mt-5">
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 position-relative">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 position-relative pb-4 pb-md-0">
                             <img src="./img/img_prueba.jpg" class="card-img-top w-100" alt="...">
                             <div class="card-body pt-3">
                                 <h5 class="card-title">Card title</h5>
@@ -343,17 +364,14 @@
                             <img src="./img/img_prueba.jpg" class="card-img-top w-100" alt="...">
                             <div class="card-body pt-3">
                                 <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of
-                                    the
-                                    card's content.</p>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                             <div
                                 class="fw-lighter text-light position-absolute top-0 start-0 bg_color_secondary ps-2 pe-4 py-1 mt-2 ms-2 rounded-border">
                                 <h2 class="parraf_footer">Turismo</h2>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 position-relative d-none d-sm-block">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 position-relative d-none d-md-block">
                             <div class="row g-2 d-flex align-items-center">
                                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                     <img src="./img/img_prueba.jpg" class="img-fluid" alt="...">
@@ -368,7 +386,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row g-2 d-flex align-items-center">
+                            <div class="row g-2 d-flex align-items-center pt-2">
                                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                     <img src="./img/img_prueba.jpg" class="img-fluid" alt="...">
                                 </div>
@@ -377,26 +395,24 @@
                                         <h5 class="card-title fs-6 h6 lh-1"><small>El secreto genérico de las llamas
                                                 blancas</small>
                                         </h5>
-                                        <p class="card-text fs-6 h6"><small class="text-muted">lorem impasdfuaf
-                                                asdf</small></p>
+                                        <p class="card-text fs-6 h6"><small class="text-muted">lorem impasdfuaf asdf</small></p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row g-2 d-flex align-items-center">
+                            <div class="row g-2 d-flex align-items-center pt-2">
                                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                     <img src="./img/img_prueba.jpg" class="img-fluid" alt="...">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
-                                        <h5 class="card-title fs-6 h6 lh-1"><small>El secreto genérico de las llamas
-                                                blancas</small>
+                                        <h5 class="card-title fs-6 h6 lh-1"><small>El secreto genérico de las llamas blancas</small>
                                         </h5>
                                         <p class="card-text fs-6 h6"><small class="text-muted">lorem impasdfuaf
                                                 asdf</small></p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row g-2 d-flex align-items-center">
+                            <div class="row g-2 d-flex align-items-center pt-2">
                                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                     <img src="./img/img_prueba.jpg" class="img-fluid" alt="...">
                                 </div>
@@ -428,7 +444,7 @@
                     </div>
                     <!-- columna de 3 -->
                     <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 position-relative">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 position-relative pb-4 pb-md-0">
                             <img src="./img/img_prueba.jpg" class="card-img-top w-100" alt="...">
                             <div class="card-body pt-3">
                                 <h5 class="card-title">Card title</h5>
@@ -442,7 +458,7 @@
                                 <h2 class="parraf_footer">Turismo</h2>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 position-relative">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 position-relative pb-4 pb-md-0">
                             <img src="./img/img_prueba.jpg" class="card-img-top w-100" alt="...">
                             <div class="card-body pt-3">
                                 <h5 class="card-title">Card title</h5>
@@ -473,7 +489,7 @@
                     </div>
                     <!-- Columna de 4 -->
                     <div class="row mt-5">
-                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 position-relative">
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 position-relative pb-4 pb-md-0">
                             <img src="./img/img_prueba.jpg" class="card-img-top w-100" alt="...">
                             <div class="card-body pt-3">
                                 <h5 class="card-title">Card title</h5>
@@ -487,7 +503,7 @@
                                 <h2 class="parraf_footer">Turismo</h2>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 position-relative">
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 position-relative pb-4 pb-md-0">
                             <img src="./img/img_prueba.jpg" class="card-img-top w-100" alt="...">
                             <div class="card-body pt-3">
                                 <h5 class="card-title">Card title</h5>
@@ -501,7 +517,7 @@
                                 <h2 class="parraf_footer">Turismo</h2>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 position-relative">
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 position-relative pb-4 pb-md-0">
                             <img src="./img/img_prueba.jpg" class="card-img-top w-100" alt="...">
                             <div class="card-body pt-3">
                                 <h5 class="card-title">Card title</h5>
@@ -566,7 +582,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row g-2 d-flex align-items-center">
+                                    <div class="row g-2 d-flex align-items-center pt-md-4">
                                         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                             <img src="./img/img_prueba.jpg" class="img-fluid" alt="...">
                                         </div>
@@ -581,7 +597,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row g-2 d-flex align-items-center">
+                                    <div class="row g-2 d-flex align-items-center pt-md-4">
                                         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                             <img src="./img/img_prueba.jpg" class="img-fluid" alt="...">
                                         </div>
@@ -596,7 +612,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row g-2 d-flex align-items-center">
+                                    <div class="row g-2 d-flex align-items-center pt-md-4">
                                         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                             <img src="./img/img_prueba.jpg" class="img-fluid" alt="...">
                                         </div>
@@ -633,7 +649,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row g-2 d-flex align-items-center">
+                                    <div class="row g-2 d-flex align-items-center pt-md-4">
                                         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                             <img src="./img/img_prueba.jpg" class="img-fluid" alt="...">
                                         </div>
@@ -648,7 +664,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row g-2 d-flex align-items-center">
+                                    <div class="row g-2 d-flex align-items-center pt-md-4">
                                         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                             <img src="./img/img_prueba.jpg" class="img-fluid" alt="...">
                                         </div>
@@ -663,7 +679,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row g-2 d-flex align-items-center">
+                                    <div class="row g-2 d-flex align-items-center pt-md-4">
                                         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                             <img src="./img/img_prueba.jpg" class="img-fluid" alt="...">
                                         </div>
@@ -683,7 +699,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                     <div class="m-auto position-relative">
                         <img src="./img/img_prueba.jpg" class="card-img-top w-100" alt="...">
                         <div class="card-body">
@@ -854,15 +870,15 @@
         </div>
     </section>
 
-    <footer class="">
+    <footer>
         <div class="h-25 bg_fond d-flex">
-            <div class="container m-auto row justify-content-between align-items-center">
-                <div class="col-6 py-5">
+            <div class="container m-auto row justify-content-md-between align-items-md-center flex-column flex-md-row py-5 py-lg-0">
+                <div class="col-md-6 pb-3 py-lg-5">
                     <h2 class="text-light fs-4">Quiero estar al día</h2>
                     <p class="text-light fs-6 m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
                         inventore reiciendis at voluptates veritatis incidunt dolorem blanditiis iste odit.</p>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6">
                     <form class="d-flex justify-content-end">
                         <i class="fa-solid fa-envelope bg-light fs-5 p-2"></i>
                         <input class="border-0 py-1 w-css-35" type="search" placeholder="E-mail" aria-label="Search">
@@ -872,17 +888,17 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row py-5 align-items-lg-start text-secondary">
-                <div class="col-3">
+        <div class="container-fluid container-xxl pt-4 pt-md-0 px-4">
+            <div class="row py-3 py-md-5 align-items-lg-start align-items-sm-center text-secondary">
+                <div class="col-lg-3 col-md-4 col-sm-12 d-flex m-auto justify-content-center justify-content-lg-start align-items-center align-items-md-start flex-column">
                     <div>
-                        <img class="card-logo" src="./img/serArgentino.png" alt="serArgentino">
+                        <img class="card-logo" src="./img/serArgentino.png" alt="Ser Argentino">
                     </div>
-                    <div class="pt-5 parraf_footer">
+                    <div class="pt-lg-5 pt-3 parraf_footer text-center text-md-start">
                         <a href="#" class=" nav-link"><i class="me-3 fa-solid fa-envelope"></i>
                             contacto@serargentino.com</a>
                         <a href="#" class=" nav-link"><i class="me-3 fa-solid fa-phone"></i> +011 3453 45457</a>
-                        <div class="mt-2 parraf_footer">
+                        <div class="d-flex justify-content-center justify-content-md-start mt-2">
                             <i class="me-2 fa fa-facebook" aria-hidden="true"></i>
                             <i class="me-2 fa fa-twitter" aria-hidden="true"></i>
                             <i class="me-2 fa fa-instagram" aria-hidden="true"></i>
@@ -890,49 +906,49 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3 d-none d-md-block">
-                    <h2 class="title_footer pt-2 text-uppercase">Formas de pago</h2>
-                    <div class="d-flex flex-column mt-4">
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                    <h2 class="title_footer pt-4 pt-lg-2 text-uppercase text-center text-md-start">Formas de pago</h2>
+                    <div class="d-flex flex-column mt-lg-4 mt-2 m-auto justify-content-center align-items-center align-items-md-start">
                         <div class="d-flex">
                             <p class="mx-1"><img src="./ps/visa.png" alt="Visa"></p>
                             <p class="mx-1"><img src="./ps/mercadopago.png" alt="Mercado Pago"></p>
                             <p class="mx-1"><img src="./ps/mastercard.png" alt="Master Card"></p>
                         </div>
                         <div class="d-flex">
-                            <p class="mx-1"><img src="./ps/paypal.png" alt=""></p>
-                            <p class="mx-1"><img src="./ps/american_express.png" alt="American Express"></p>
+                            <p class="mx-1 mb-0"><img src="./ps/paypal.png" alt=""></p>
+                            <p class="mx-1 mb-0"><img src="./ps/american_express.png" alt="American Express"></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-2">
-                    <h2 class="title_footer pt-2 text-uppercase">Institucional</h2>
-                    <div class="d-flex flex-column mt-4 parraf_footer">
+                <div class="col-lg-2 col-md-4 col-sm-12">
+                    <h2 class="title_footer pt-4 pt-lg-2 text-uppercase text-center text-md-start">Institucional</h2>
+                    <div class="d-flex flex-column mt-2 mt-md-4 parraf_footer text-center text-md-start">
                         <a href="#" class="nav-link">Mi cuenta</a>
                         <a href="#" class="nav-link">Historial de pedidos</a>
                         <a href="#" class="nav-link">Favoritos</a>
                     </div>
                 </div>
-                <div class="col-2">
-                    <h2 class="title_footer pt-2 text-uppercase">Mi cuenta</h2>
-                    <div class="d-flex flex-column mt-4 parraf_footer">
+                <div class="col-lg-2 col-md-4 col-sm-12">
+                    <h2 class="title_footer pt-4 pt-lg-2 text-uppercase text-center text-md-start">Mi cuenta</h2>
+                    <div class="d-flex flex-column mt-2 mt-md-4 parraf_footer text-center text-md-start">
                         <a href="#" class="nav-link">Mi cuenta</a>
                         <a href="#" class="nav-link">Historial de pedidos</a>
                         <a href="#" class="nav-link">Favoritos</a>
                     </div>
 
                 </div>
-                <div class="col-2">
-                    <h2 class="title_footer pt-2 text-uppercase">Políticas</h2>
-                    <div class="d-flex flex-column mt-4 parraf_footer">
+                <div class="col-lg-2 col-md-4 col-sm-12">
+                    <h2 class="title_footer pt-4 pt-lg-2 text-uppercase text-center text-md-start">Políticas</h2>
+                    <div class="d-flex flex-column mt-2 mt-md-4 parraf_footer text-center text-md-start">
                         <a href="#" class="nav-link">Marcas y propiedad intelectual</a>
                         <a href="#" class="nav-link">Privacidad de datos</a>
                         <a href="#" class="nav-link">Términos y Condiciones</a>
                     </div>
                 </div>
             </div>
-            <div class="d-flex justify-content-center align-items-center py-4 d-none d-md-block">
+            <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center py-4">
                 <img src="./ps/log1.png" alt="cyber monday">
-                <img src="./ps/logo2.png" alt="">
+                <img src="./ps/logo2.png" alt="Safety">
                 <img src="./ps/logo3.png" alt="Direccion general de defensa y proteccion al consumidor">
                 <img src="./ps/logo4.png" alt="Direccion general de proteccion a datos personales">
                 <img src="./ps/logo 5.png" alt="Sello case">
@@ -942,7 +958,7 @@
                 <p class="text-center">Utilizamos cookies para asegurar que damos la mejor experencia al usuario en
                     nuestro sitio web. Si continúa utilizando este sitio asumiremos que está de acuerdo.</p>
 
-                <div class="parraf_footer">
+                <div class="parraf_footer d-flex justify-content-center flex-column">
                     <button
                         class="py-1 px-4 bg_color_primary text-uppercase text-light border_primary fw-semibold">Estoy de
                         acuerdo</button>
@@ -952,7 +968,6 @@
             </div>
         </div>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
