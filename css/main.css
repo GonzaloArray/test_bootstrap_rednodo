@@ -91,3 +91,27 @@ h1, h2, h3, h4, h5, h6{
     font-size: 10px;
     list-style-type: disc;
 }
+/* Card title */
+.card-title{
+    font-size: 16px!important;
+}
+.card-text{
+    font-size: 14px!important;
+}
+.card-title2{
+    font-size: 21px!important;
+}
+.card-text2{
+    font-size: 15px!important;
+}
+
+
+@media (min-width: 1200px) {
+    .estiloNuevo::after{
+        content: '';
+        background-color: #00000020;
+        padding: 1px 100%;
+        font-size: 0.1px;
+        margin-left: 1rem;
+    }
+}
