@@ -6,8 +6,8 @@
     --primary: ;
     --secondary: ;
 
-    --font: ;
-}
+    --font: 'Open Sans', sans-serif;
+}   
 *{
     margin: 0;
     padding: 0;
@@ -17,6 +17,26 @@
 h1, h2, h3, h4, h5, h6{
     font-family: var(--font);
     margin: 0;
+}
+p{
+    font-family: var(--font);
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #707070de;
+}
+a:hover{
+    cursor: pointer;
+    color: #707070de;
+}
+i:hover{
+    cursor: pointer;
+    color: #707070de;
 }
 /* Clases */
 .navContainer{
@@ -33,6 +53,10 @@ h1, h2, h3, h4, h5, h6{
 }
 .text_color_primary{
     color: #2e68ad;
+}
+/* Title general */
+.title_general{
+    font-family: 'Merriweather', serif;
 }
 .bg_color_secondary{
     background-color: #0a376c;
@@ -114,4 +138,14 @@ h1, h2, h3, h4, h5, h6{
         font-size: 0.1px;
         margin-left: 1rem;
     }
+    .estiloNuevo1::after{
+        content: '';
+        background-color: #00000020;
+        padding: 1px 70%;
+        font-size: 0.1px;
+        margin-left: 1rem;
+    }
+}
+.bg_hover:hover{
+    background-color: #6d6c6c;
 }
